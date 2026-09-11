@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick de Souza — Filosofia, Pesquisa &amp; Docência</title>
+  <meta name="description" content="Currículo acadêmico e profissional de Erick de Souza. Estudante e pesquisador de Filosofia, atuante em docência de humanidades, ética e história da filosofia.">
+  <meta name="author" content="Erick de Souza">
+
+  <!-- Tipografia Editorial Clássica: Newsreader (Serif) + Inter (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. FUNDAMENTAÇÃO & PALETA MONOCROMÁTICA ESTRITA
+       ========================================================================== */
+    :root {
+      --bg: #fcfbf9;             /* Off-white papel clássico de imprensa */
+      --ink: #111111;           /* Preto profundo para títulos e elementos de contraste */
+      --ink-body: #2d2d2d;      /* Cinza muito escuro para máxima legibilidade do corpo */
+      --ink-muted: #595959;     /* Cinza médio para descrições secundárias */
+      --ink-light: #7c7c7c;     /* Cinza neutro para metadados, pequenas caixas e datas */
+      --hairline: #e3e1d9;      /* Linha divisória fina (1px) */
+      --hairline-dark: #111111; /* Fio de corte clássico tipográfico */
+
+      --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+      --max-w: 720px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      background-color: var(--bg);
+      color: var(--ink-body);
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-serif);
+      line-height: 1.78;
+      background-color: var(--bg);
+      padding: 4.5rem 1.5rem 6.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Container de leitura centralizado (680px a 720px) */
+    .catalog-wrapper {
+      width: 100%;
+      max-width: var(--max-w);
+    }
+
+    /* ==========================================================================
+       2. REGRAS TIPOGRÁFICAS GERAIS (ESTILO IMPRESSO / EDITORIAL)
+       ========================================================================== */
+    h1, h2, h3, h4 {
+      color: var(--ink);
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1.0625rem; /* ~17px */
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    em, i {
+      font-style: italic;
+      font-family: var(--font-serif);
+    }
+
+    strong, b {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* Links bibliográficos sóbrios */
+    a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--ink-light);
+      transition: text-decoration-color 0.15s ease, color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-color: var(--ink);
+    }
+
+    /* Régua divisória dupla (estilo frontispício acadêmico clássico) */
+    .rule-double {
+      border: none;
+      border-top: 1px solid var(--hairline-dark);
+      border-bottom: 1px solid var(--hairline);
+      height: 4px;
+      margin: 2.25rem 0 3rem;
+    }
+
+    /* ==========================================================================
+       3. CABEÇALHO / FRONTISPÍCIO
+       ========================================================================== */
+    .masthead {
+      margin-bottom: 2rem;
+    }
+
+    .masthead-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: var(--font-sans);
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-light);
+      margin-bottom: 1.6rem;
+      border-bottom: 1px solid var(--hairline);
+      padding-bottom: 0.5rem;
+    }
+
+    .btn-print {
+      background: none;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-muted);
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      padding: 0;
+    }
+
+    .btn-print:hover {
+      color: var(--ink);
+    }
+
+    .masthead-name {
+      font-size: 2.75rem; /* 44px */
+      letter-spacing: -0.025em;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+    }
+
+    .masthead-subtitle {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--ink-muted);
+      font-weight: 400;
+      margin-bottom: 1.35rem;
+      line-height: 1.45;
+    }
+
+    .masthead-contacts {
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem 0.85rem;
+      line-height: 1.5;
+    }
+
+    .masthead-contacts .dot {
+      color: var(--hairline);
+      user-select: none;
+    }
+
+    .masthead-contacts a {
+      font-weight: 400;
+      color: var(--ink-body);
+    }
+
+    .masthead-contacts a:hover {
+      color: var(--ink);
+    }
+
+    /* ==========================================================================
+       4. SEÇÕES EDITORIAIS
+       ========================================================================== */
+    .section {
+      margin-bottom: 3.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--hairline-dark);
+      padding-bottom: 0.45rem;
+      margin-bottom: 1.85rem;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    .section-roman {
+      font-family: var(--font-serif);
+      font-size: 0.875rem;
+      color: var(--ink-light);
+      font-variant-numeric: oldstyle-nums;
+      letter-spacing: 0.05em;
+    }
+
+    /* ==========================================================================
+       5. NOTA DE INTENÇÃO (MEMORIAL FORMATIVO)
+       ========================================================================== */
+    .statement-box {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--ink);
+      padding-left: 1.6rem;
+      border-left: 2px solid var(--hairline-dark);
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    .statement-box p {
+      text-align: left;
+      margin-bottom: 1.15rem;
+    }
+
+    .statement-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ==========================================================================
+       6. ENTRADAS CRONOLÓGICAS (FORMAÇÃO ACADÊMICA)
+       ========================================================================== */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 2.15rem;
+    }
+
+    .timeline-entry {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.25rem 1.5rem;
+      align-items: baseline;
+    }
+
+    .entry-main {
+      grid-column: 1 / 2;
+    }
+
+    .entry-date {
+      grid-column: 2 / 3;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+      text-align: right;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .entry-degree {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .entry-inst {
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--ink-muted);
+      margin-top: 0.15rem;
+    }
+
+    .entry-detail {
+      grid-column: 1 / 3;
+      margin-top: 0.45rem;
+      font-size: 0.985rem;
+      color: var(--ink-body);
+      line-height: 1.68;
+    }
+
+    .entry-detail p {
+      font-size: inherit;
+      line-height: inherit;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    .label-tag {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.725rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-muted);
+      margin-right: 0.45rem;
+    }
+
+    /* ==========================================================================
+       7. LINHAS DE INTERESSE E PESQUISA
+       ========================================================================== */
+    .research-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.85rem;
+    }
+
+    .research-block {
+      padding-bottom: 1.35rem;
+      border-bottom: 1px dotted var(--hairline);
+    }
+
+    .research-block:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .research-field {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.3rem;
+    }
+
+    .research-summary {
+      font-size: 0.965rem;
+      color: var(--ink-body);
+      line-height: 1.65;
+      text-align: left;
+    }
+
+    /* ==========================================================================
+       8. PRODUÇÃO, DOCÊNCIA E PROJETOS
+       ========================================================================== */
+    .catalog-category {
+      margin-bottom: 2.25rem;
+    }
+
+    .catalog-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .category-heading {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-light);
+      margin-bottom: 1.15rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--hairline);
+    }
+
+    .item-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .item-row {
+      font-size: 0.985rem;
+      line-height: 1.65;
+      color: var(--ink-body);
+      padding-left: 1.35rem;
+      text-indent: -1.35rem;
+      text-align: left;
+    }
+
+    .bullet-mark {
+      color: var(--ink-light);
+      margin-right: 0.35rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+    }
+
+    /* ==========================================================================
+       9. RODAPÉ, CHANCELA PESSOAL (CORINTHIANS) & ASSINATURA
+       ========================================================================== */
+    .colophon {
+      margin-top: 5.5rem;
+      padding-top: 2.75rem;
+      border-top: 1px solid var(--hairline-dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .crest-seal {
+      margin-bottom: 1.25rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.88;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .crest-seal:hover {
+      opacity: 1;
+      transform: scale(1.04);
+    }
+
+    /* Brasão em vetor SVG monocromático (38px x 45px) */
+    .crest-svg {
+      width: 38px;
+      height: 45px;
+      display: block;
+      color: var(--ink);
+    }
+
+    .colophon-author {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.0625rem;
+      color: var(--ink);
+      margin-bottom: 0.3rem;
+    }
+
+    .colophon-details {
+      font-family: var(--font-sans);
+      font-size: 0.725rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-light);
+    }
+
+    /* ==========================================================================
+       10. RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS
+       ========================================================================== */
+    @media (max-width: 640px) {
+      body {
+        padding: 2.5rem 1.15rem 4.5rem;
+      }
+
+      .masthead-name {
+        font-size: 2.15rem;
+      }
+
+      .masthead-subtitle {
+        font-size: 1.125rem;
+      }
+
+      .timeline-entry {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+      }
+
+      .entry-date {
+        grid-column: 1 / 2;
+        text-align: left;
+        margin-top: 0.15rem;
+        margin-bottom: 0.35rem;
+      }
+
+      .entry-detail {
+        grid-column: 1 / 2;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+
+    /* ==========================================================================
+       11. CONFIGURAÇÃO DE IMPRESSÃO / SALVAR PDF (@media print)
+       ========================================================================== */
+    @media print {
+      @page {
+        margin: 1.8cm 1.5cm 1.8cm 1.5cm;
+        size: A4 portrait;
+      }
+
+      html, body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+        padding: 0 !important;
+        line-height: 1.55;
+      }
+
+      .catalog-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+
+      .btn-print, .masthead-meta-bar {
+        display: none !important;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #000000 !important;
+      }
+
+      .section {
+        margin-bottom: 2rem !important;
+        break-inside: avoid-page;
+      }
+
+      .timeline-entry {
+        break-inside: avoid;
+        margin-bottom: 1.25rem;
+      }
+
+      .colophon {
+        margin-top: 2.5rem !important;
+        padding-top: 1.5rem !important;
+        break-inside: avoid;
+      }
+
+      .crest-svg {
+        color: #000000 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="catalog-wrapper" role="main">
+
+    <!-- CABEÇALHO / FRONTISPÍCIO -->
+    <header class="masthead">
+      <div class="masthead-meta-bar">
+        <span>Curriculum Vitae et Studiorum</span>
+        <button class="btn-print" onclick="window.print()" title="Imprimir versão em papel ou salvar em PDF">Imprimir / Salvar PDF</button>
+      </div>
+
+      <h1 class="masthead-name">Erick de Souza</h1>
+      <p class="masthead-subtitle">Estudante e Pesquisador de Filosofia &middot; Docência e Humanidades</p>
+
+      <nav class="masthead-contacts" aria-label="Contatos e Informações Acadêmicas">
+        <span>São Paulo, SP &mdash; Brasil</span>
+        <span class="dot">&bull;</span>
+        <a href="mailto:erickdesouza.filosofia@gmail.com">erickdesouza.filosofia@gmail.com</a>
+        <span class="dot">&bull;</span>
+        <a href="https://lattes.cnpq.br/" target="_blank" rel="noopener noreferrer">Currículo Lattes (CNPq)</a>
+        <span class="dot">&bull;</span>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </header>
+
+    <hr class="rule-double">
+
+    <!-- I. NOTA DE INTENÇÃO / APRESENTAÇÃO -->
+    <section class="section" aria-labelledby="heading-intencao">
+      <div class="section-header">
+        <h2 id="heading-intencao" class="section-title">Nota de Intenção &amp; Memorial</h2>
+        <span class="section-roman">I</span>
+      </div>
+
+      <div class="statement-box">
+        <p>
+          A investigação filosófica se sustenta na recusa às certezas precipitadas e no compromisso rigoroso com o exame imanente dos conceitos. Minha trajetória na graduação e na pesquisa acadêmica orienta-se pela leitura direta das fontes clássicas, com dedicação particular aos problemas centrais da <em>ética normativa</em>, da <em>filosofia política</em> e da <em>teoria do conhecimento</em>. Interessa-me investigar como a deliberação racional, a prudência prática e a constituição do caráter articulam-se na fundamentação da vida moral e da esfera pública.
+        </p>
+        <p>
+          Na docência, concebo a aula de Filosofia não como uma transmissão enciclopédica de sistemas ou doxografias estanques, mas como uma autêntica <em>oficina de pensamento crítico</em> e formação humana (<em>Bildung</em>). Por meio do diálogo argumentativo e da leitura atenta dos textos canônicos, busco cultivar com os estudantes a autonomia reflexiva, a capacidade de identificar falácias e o compromisso ético indispensável ao exercício pleno da cidadania.
+        </p>
+      </div>
+    </section>
+
+    <!-- II. FORMAÇÃO ACADÊMICA -->
+    <section class="section" aria-labelledby="heading-formacao">
+      <div class="section-header">
+        <h2 id="heading-formacao" class="section-title">Formação Acadêmica</h2>
+        <span class="section-roman">II</span>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-entry">
+          <div class="entry-main">
+            <h3 class="entry-degree">Graduação em Filosofia (Licenciatura Plena &amp; Bacharelado)</h3>
+            <p class="entry-inst">Universidade de São Paulo &mdash; FFLCH / USP</p>
+          </div>
+          <time class="entry-date">2023 &mdash; Presente</time>
+          <div class="entry-detail">
+            <p>
+              <span class="label-tag">Pesquisa Monográfica:</span>
+              Investigação em torno da articulação entre deliberação (<em>bouleusis</em>), escolha prudencial (<em>prohairesis</em>) e sabedoria prática (<em>phronesis</em>) nos Livros III e VI da <em>Ética a Nicômaco</em> de Aristóteles. Exame da racionalidade prática diante da contingência das ações humanas.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-entry">
+          <div class="entry-main">
+            <h3 class="entry-degree">Iniciação Científica (PIBIC / FAPESP)</h3>
+            <p class="entry-inst">Departamento de Filosofia &mdash; Grupo de Pesquisa em Ética e Filosofia Política</p>
+          </div>
+          <time class="entry-date">2024 &mdash; 2025</time>
+          <div class="entry-detail">
+            <p>
+              <span class="label-tag">Plano de Trabalho:</span>
+              <em>O conceito de equidade (epieikeia) e a correção da lei estrita no pensamento clássico</em>. Análise sistemática sobre as insuficiências da universalidade da regra jurídica positiva e a necessidade de julgamento prudencial no caso particular.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-entry">
+          <div class="entry-main">
+            <h3 class="entry-degree">Formação Complementar em Humanidades &amp; Filologia Clássica</h3>
+            <p class="entry-inst">Cursos e Módulos de Extensão Universitária</p>
+          </div>
+          <time class="entry-date">2023 &mdash; 2024</time>
+          <div class="entry-detail">
+            <p>
+              Língua Grega Clássica aplicada à Hermenêutica Filosófica (Morfologia e Léxico Conceitual, 120h); Teoria Crítica e Esfera Pública (60h); Introdução à Lógica Dedutiva e Análise Argumentativa (60h).
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- III. LINHAS DE INTERESSE E PESQUISA -->
+    <section class="section" aria-labelledby="heading-pesquisa">
+      <div class="section-header">
+        <h2 id="heading-pesquisa" class="section-title">Linhas de Interesse &amp; Pesquisa</h2>
+        <span class="section-roman">III</span>
+      </div>
+
+      <div class="research-list">
+        <div class="research-block">
+          <h3 class="research-field">Ética, Filosofia Moral &amp; Razão Prática</h3>
+          <p class="research-summary">
+            Fundamentação do agir humano, ética das virtudes, deliberação prática (<em>phronesis</em>), o problema da contingência moral e as relações contemporâneas entre justiça distributiva, equidade e reconhecimento.
+          </p>
+        </div>
+
+        <div class="research-block">
+          <h3 class="research-field">Filosofia Política, Teoria do Estado &amp; Republicanismo</h3>
+          <p class="research-summary">
+            Gênese do ideal republicano e democrático, a relação entre o cidadão e a comunidade política (<em>pólis</em>), fundamentação dos direitos humanos fundamentais e os impasses contemporâneos da deliberação pública.
+          </p>
+        </div>
+
+        <div class="research-block">
+          <h3 class="research-field">Teoria do Conhecimento &amp; Epistemologia</h3>
+          <p class="research-summary">
+            Tradição cética clássica (pirrônica e acadêmica) e moderna; os critérios de verdade, justificação epistêmica da crença e a crítica ao dogmatismo metodológico de Descartes a Hume.
+          </p>
+        </div>
+
+        <div class="research-block">
+          <h3 class="research-field">História da Filosofia (Antiga e Moderna)</h3>
+          <p class="research-summary">
+            Diálogo socrático-platônico, estruturação do pensamento aristotélico e o desdobramento do racionalismo clássico e empirismo nos séculos XVII e XVIII.
+          </p>
+        </div>
+
+        <div class="research-block">
+          <h3 class="research-field">Ensino de Filosofia, Didática &amp; Cidadania</h3>
+          <p class="research-summary">
+            Transposição didática do texto filosófico no Ensino Médio, metodologias ativas para as humanidades, oficinas de lógica informal e mediação de conflitos discursivos em sala de aula.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IV. PRODUÇÃO ACADÊMICA, DOCÊNCIA E PROJETOS -->
+    <section class="section" aria-labelledby="heading-producao">
+      <div class="section-header">
+        <h2 id="heading-producao" class="section-title">Produção, Docência &amp; Atividades Acadêmicas</h2>
+        <span class="section-roman">IV</span>
+      </div>
+
+      <!-- Ensaios e Artigos -->
+      <div class="catalog-category">
+        <h3 class="category-heading">Artigos, Ensaios &amp; Comunicações</h3>
+        <ul class="item-list">
+          <li class="item-row">
+            <span class="bullet-mark">&mdash;</span>
+            <strong>SOUZA, Erick de.</strong> &ldquo;A prudência prática como mediação entre a norma abstrata e o contingente em Aristóteles&rdquo;. <em>Cadernos Acadêmicos de Filosofia e Humanidades</em>, v. 8, n. 2, 2025.
+          </li>
+          <li class="item-row">
+            <span class="bullet-mark">&mdash;</span>
+            <strong>SOUZA, Erick de.</strong> &ldquo;Da suspensão do juízo (<em>epokhé</em>) à serenidade da alma: atualidade do ceticismo pirrônico&rdquo;. Comunicação acadêmica no <em>Encontro de Pesquisa na Graduação em Filosofia</em>, 2024.
+          </li>
+          <li class="item-row">
+            <span class="bullet-mark">&mdash;</span>
+            <strong>SOUZA, Erick de.</strong> &ldquo;Retórica socrática versus persuasão sofística: a ética do diálogo no <em>Górgias</em> de Platão&rdquo;. Ensaio de Qualificação Monográfica, 2024.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Prática Docente & Oficinas -->
+      <div class="catalog-category">
+        <h3 class="category-heading">Prática Docente &amp; Oficinas Pedagógicas</h3>
+        <ul class="item-list">
+          <li class="item-row">
+            <span class="bullet-mark">&mdash;</span>
+            <strong>Estágio Supervisionado em Ensino de Filosofia:</strong> Elaboração e regência de sequências didáticas para o Ensino Médio em escola da rede pública estadual. Unidade programática: <em>&ldquo;Ética, Cidadania e Tomada de Decisão Moral&rdquo;</em> (2025).
+          </li>
+          <li class="item-row">
+            <span class="bullet-mark">&mdash;</span>
+            <strong>Oficina de Lógica Informal &amp; Argumentação Crítica:</strong> Concepção e aplicação de módulo extracurricular voltado a estudantes de cursos pré-vestibulares populares, com foco em falácias lógicas e redação dissertativo-argumentativa (2024 &mdash; 2025).
+          </li>
+          <li class="item-row">
+            <span class="bullet-mark">&mdash;</span>
+            <strong>Elaboração de Guias de Leitura Orientada:</strong> Produção de material de apoio didático sobre trechos selecionados da <em>Apologia de Sócrates</em> (Platão) e do <em>Discurso do Método</em> (Descartes) para o ciclo básico (2024).
+          </li>
+        </ul>
+      </div>
+
+      <!-- Grupos de Estudos & Monitoria -->
+      <div class="catalog-category">
+        <h3 class="category-heading">Grupos de Estudo &amp; Monitoria Acadêmica</h3>
+        <ul class="item-list">
+          <li class="item-row">
+            <span class="bullet-mark">&mdash;</span>
+            <strong>Monitoria de História da Filosofia Antiga:</strong> Atendimento a discentes do primeiro ano, esclarecimento de dúvidas conceituais e facilitação de oficinas de fichamento e exegese de textos clássicos (2024 &mdash; 2025).
+          </li>
+          <li class="item-row">
+            <span class="bullet-mark">&mdash;</span>
+            <strong>Coordenação de Grupo de Estudos em Filosofia Moral:</strong> Mediação de encontros quinzenais dedicados à leitura comentada de obras seminais da tradição ética, de Aristóteles a Kant (2024 &mdash; Presente).
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RODAPÉ / CHANCELA & ASSINATURA -->
+    <footer class="colophon">
+      <!-- Brasão do Sport Club Corinthians Paulista estilizado em vetor SVG monocromático -->
+      <div class="crest-seal" title="Sport Club Corinthians Paulista &mdash; Fiel e Tradição">
+        <svg class="crest-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" aria-label="Brasão estilizado do Sport Club Corinthians Paulista" role="img">
+          <defs>
+            <!-- Trajetórias circulares para tipografia arqueada na borda do escudo -->
+            <path id="crest-arc-top" d="M 23.5,58 A 26.5,26.5 0 0,1 76.5,58" fill="none" />
+            <path id="crest-arc-bot" d="M 76.5,59 A 26.5,26.5 0 0,1 23.5,59" fill="none" />
+            
+            <!-- Máscara de recorte circular para a bandeira interna paulista -->
+            <clipPath id="crest-inner-clip">
+              <circle cx="50" cy="58" r="19" />
+            </clipPath>
+          </defs>
+
+          <!-- ================= REMOS CRUZADOS AO FUNDO ================= -->
+          <!-- Remo diagonal 1 (Noroeste ao Sudeste) -->
+          <line x1="14" y1="17" x2="86" y2="99" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" />
+          <circle cx="14" cy="17" r="2.2" fill="currentColor" />
+          <line x1="11" y1="13.5" x2="17" y2="20.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M 77,88 C 84,95 90,103 88,107 C 86,109 81,105 74,97 C 72,94 74,90 77,88 Z" fill="currentColor" />
+          <line x1="75.5" y1="92" x2="84" y2="102.5" stroke="#fcfbf9" stroke-width="0.8" />
+
+          <!-- Remo diagonal 2 (Nordeste ao Sudoeste) -->
+          <line x1="86" y1="17" x2="14" y2="99" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" />
+          <circle cx="86" cy="17" r="2.2" fill="currentColor" />
+          <line x1="89" y1="13.5" x2="83" y2="20.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M 23,88 C 16,95 10,103 12,107 C 14,109 19,105 26,97 C 28,94 26,90 23,88 Z" fill="currentColor" />
+          <line x1="24.5" y1="92" x2="16" y2="102.5" stroke="#fcfbf9" stroke-width="0.8" />
+
+          <!-- ================= ÂNCORA MARÍTIMA ================= -->
+          <!-- Argola superior da âncora -->
+          <circle cx="50" cy="9.5" r="5.5" fill="none" stroke="currentColor" stroke-width="2.4" />
+          <circle cx="50" cy="9.5" r="2" fill="currentColor" />
+          
+          <!-- Cepo horizontal da âncora -->
+          <rect x="33" y="15.5" width="34" height="3" rx="1.5" fill="currentColor" />
+          
+          <!-- Haste central da âncora -->
+          <line x1="50" y1="16" x2="50" y2="110" stroke="currentColor" stroke-width="3.5" />
+          
+          <!-- Braços curvos inferiores da âncora -->
+          <path d="M 19,89 C 27,113 73,113 81,89" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" />
+          
+          <!-- Patas/unhas triangulares da âncora -->
+          <polygon points="19,89 14,83 24,84" fill="currentColor" />
+          <polygon points="81,89 86,83 76,84" fill="currentColor" />
+          
+          <!-- Bico/cruzeta central inferior -->
+          <polygon points="46,110 50,115.5 54,110" fill="currentColor" />
+
+          <!-- ================= BÓIA E CORDA CIRCULAR ================= -->
+          <!-- Bóia externa em contraste -->
+          <circle cx="50" cy="58" r="31" fill="#fcfbf9" stroke="currentColor" stroke-width="2.6" />
+
+          <!-- Amarras/laços da corda da bóia nos quatro polos -->
+          <path d="M 47,27 L 53,27 M 47,89 L 53,89 M 19,55 L 19,61 M 81,55 L 81,61" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+
+          <!-- Faixa circular preta do escudo -->
+          <circle cx="50" cy="58" r="28.5" fill="currentColor" />
+
+          <!-- Tipografia curvada: S.C. CORINTHIANS PAULISTA & 1910 -->
+          <text fill="#fcfbf9" font-size="4.3" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="0.5px">
+            <textPath href="#crest-arc-top" startOffset="50%" text-anchor="middle">S. C. CORINTHIANS PAULISTA</textPath>
+          </text>
+          <text fill="#fcfbf9" font-size="4.5" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="0.8px">
+            <textPath href="#crest-arc-bot" startOffset="50%" text-anchor="middle">&bull; 1910 &bull;</textPath>
+          </text>
+
+          <!-- ================= ESCUDO CENTRAL (BANDEIRA DE SÃO PAULO) ================= -->
+          <circle cx="50" cy="58" r="19" fill="#fcfbf9" stroke="currentColor" stroke-width="1.8" />
+
+          <g clip-path="url(#crest-inner-clip)">
+            <!-- 13 listras alternadas preto e branco -->
+            <rect x="30" y="39" width="40" height="3" fill="currentColor" />
+            <rect x="30" y="42" width="40" height="3" fill="#fcfbf9" />
+            <rect x="30" y="45" width="40" height="3" fill="currentColor" />
+            <rect x="30" y="48" width="40" height="3" fill="#fcfbf9" />
+            <rect x="30" y="51" width="40" height="3" fill="currentColor" />
+            <rect x="30" y="54" width="40" height="3" fill="#fcfbf9" />
+            <rect x="30" y="57" width="40" height="3" fill="currentColor" />
+            <rect x="30" y="60" width="40" height="3" fill="#fcfbf9" />
+            <rect x="30" y="63" width="40" height="3" fill="currentColor" />
+            <rect x="30" y="66" width="40" height="3" fill="#fcfbf9" />
+            <rect x="30" y="69" width="40" height="3" fill="currentColor" />
+            <rect x="30" y="72" width="40" height="3" fill="#fcfbf9" />
+            <rect x="30" y="75" width="40" height="3" fill="currentColor" />
+
+            <!-- Cantão superior esquerdo com o círculo paulista -->
+            <rect x="30" y="39" width="16" height="15" fill="currentColor" stroke="#fcfbf9" stroke-width="0.8" />
+            <circle cx="38" cy="46.5" r="4.2" fill="#fcfbf9" />
+            <circle cx="38" cy="46.5" r="2.2" fill="currentColor" />
+            <!-- Estrelas nos vértices do cantão -->
+            <circle cx="33" cy="41.5" r="0.8" fill="#fcfbf9" />
+            <circle cx="43" cy="41.5" r="0.8" fill="#fcfbf9" />
+            <circle cx="33" cy="51.5" r="0.8" fill="#fcfbf9" />
+            <circle cx="43" cy="51.5" r="0.8" fill="#fcfbf9" />
+          </g>
+
+          <!-- Borda interna fina de arremate -->
+          <circle cx="50" cy="58" r="19" fill="none" stroke="currentColor" stroke-width="1.2" />
+        </svg>
+      </div>
+
+      <p class="colophon-author">Erick de Souza &middot; S&atilde;o Paulo, 2026</p>
+      <p class="colophon-details">Curr&iacute;culo acad&ecirc;mico &bull; Tipografia e composi&ccedil;&atilde;o editorial em HTML est&aacute;tico</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
